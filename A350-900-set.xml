@@ -23,16 +23,16 @@
 			</runways>
 		</airport>
 
-	<startup>
-	 <splash-texture>Aircraft/A350-family/Splashs/splash.png</splash-texture>
-	</startup>
-	<previews>
+		<startup>
+			<splash-texture>Aircraft/A350-family/Splashs/splash.png</splash-texture>
+		</startup>
+		<previews>
 			<preview>
 				<type>exterior</type>
 				<splash type="bool">true</splash>
 				<path>Splashs/splash.png</path>
 			</preview>
-	</previews>
+		</previews>
 		<aircraft-data>
 			<path>/sim/model/autopush/route/show</path>
 			<path>/sim/model/autopush/route/show-wingtip</path>
