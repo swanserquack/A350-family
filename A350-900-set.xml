@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList include="A350-common.xml">
+	<sim>
+		<description>Airbus A350-900</description>
+		<flight-model>jsb</flight-model>
+		<aero>A350-900-jsbsim</aero>
+		<variant>900</variant>
+		<engine>Trent XWB</engine>
+		<model>
+			<path>Aircraft/A350-family/Models/A350-900.xml</path>
+			<autopush include="autopush-config.xml"/>
+		</model>
+		<flaps>
+			<setting>0.00</setting>
+			<setting>0.29</setting>
+			<setting>0.596</setting>
+			<setting>0.645</setting>
+			<setting>1</setting>
+		</flaps>
+		<airport>
+			<runways>
+				<start-offset-m>30</start-offset-m>
+			</runways>
+		</airport>
+
+	<startup>
+	 <splash-texture>Aircraft/A350-family/Splashs/splash.png</splash-texture>
+	</startup>
+	<previews>
+			<preview>
+				<type>exterior</type>
+				<splash type="bool">true</splash>
+				<path>Splashs/splash.png</path>
+			</preview>
+	</previews>
+		<aircraft-data>
+			<path>/sim/model/autopush/route/show</path>
+			<path>/sim/model/autopush/route/show-wingtip</path>
+		</aircraft-data>
+	</sim>
+	<payload>
+		<weight n="0">
+			<name>Crew</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+			<min-lb type="double">120</min-lb>
+			<max-lb type="double">600</max-lb>
+		</weight>
+		<weight n="1">
+			<name>PAX</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
+			<min-lb type="double">0</min-lb>
+			<max-lb type="double">56520</max-lb>
+		</weight>
+		<weight n="2">
+			<name>Fwd Cargo</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]"/>
+			<min-lb type="double">0</min-lb>
+			<max-lb type="double">13000</max-lb>
+		</weight>
+		<weight n="3">
+			<name>Aft Cargo</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[3]"/>
+			<min-lb type="double">0</min-lb>
+			<max-lb type="double">18000</max-lb>
+		</weight>
+		<weight n="4">
+			<name>Rear Bulk Cargo</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[4]"/>
+			<min-lb type="double">0</min-lb>
+			<max-lb type="double">3000</max-lb>
+		</weight>
+	</payload>
+
+	<limits>
+		<mass-and-balance>
+			<maximum-ramp-mass-lbs>593000</maximum-ramp-mass-lbs>
+			<maximum-takeoff-mass-lbs>591000</maximum-takeoff-mass-lbs>
+			<maximum-landing-mass-lbs>452000</maximum-landing-mass-lbs>
+			<maximum-zero-fuel-mass-lbs>423000</maximum-zero-fuel-mass-lbs>
+		</mass-and-balance>
+		<max-flap-extension-speed>
+			<flaps>0.29</flaps>
+			<speed>230</speed>
+		</max-flap-extension-speed>
+		<max-flap-extension-speed>
+			<flaps>0.596</flaps>
+			<speed>205</speed>
+		</max-flap-extension-speed>
+		<max-flap-extension-speed>
+			<flaps>0.645</flaps>
+			<speed>195</speed>
+		</max-flap-extension-speed>
+		<max-flap-extension-speed>
+			<flaps>1</flaps>
+			<speed>190</speed>
+		</max-flap-extension-speed>
+		<vne>370</vne>
+		<max-gear-extension-speed>250</max-gear-extension-speed>
+		<max-positive-g>2.5</max-positive-g>
+		<max-negative-g>-1</max-negative-g>
+	</limits>
+</PropertyList>

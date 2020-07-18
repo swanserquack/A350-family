@@ -1,0 +1,12 @@
+# generated backup files
+*.*~
+.*~
+
+# swap files
+*.swp
+*.swo
+
+# blender and gimp files
+*.blend
+*.blend1
+*.xcf
