@@ -7,5 +7,5 @@ Following versions are currently included:
 - A350-900
 
 ## Contributing
-Please read the [contributing guidelines]() before starting to work
+Please read the [contributing guidelines](CONTRIBUTING.md) before starting to work
 on this aircraft.
