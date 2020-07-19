@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PropertyList>
+<PropertyList  include="Aircraft/Generic/Human/Include/walker-include.xml">
 	<sim>
 		<author> Juuso Tapaninen (jormapaappa1235), Brendan O'Gara (Sbyx), Chris Leung (ACJZA), Chris Andrews (DARK-L) Joshua Davidson (it0uchpods/411)</author>
 		<status>Alpha</status>
@@ -469,7 +469,7 @@
 	<instrumentation>
 		<!-- mk-viii configuration, see: http://wiki.flightgear.org/index.php/GPWS -->
 		<mk-viii> 
-			<serviceable>true</serviceabl>
+			<serviceable>true</serviceable>
 			<configuration-module>
 				<category-1>255</category-1>
 				<category-4>11</category-4>
