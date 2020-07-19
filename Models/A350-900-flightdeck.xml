@@ -1045,42 +1045,4 @@
 		</center>
 	</animation>
 
-	<effect>
-	  <inherits-from>Effects/lightmap</inherits-from>
-	  <parameters>
-	    <texture n="1">
-	      <image>Aircraft/A350-family/Models/flightdeck/LightMap/dashboard.png</image>
-	    </texture>
-	    <factor>
-	      <use>controls/lighting/panel-norm</use>
-	    </factor>
-	  </parameters>
-	  <object-name>Cube.210</object-name>
-	  <object-name>Fuselage.004</object-name>
-	  <object-name>Cube.054</object-name>
-	  <object-name>Cube.039</object-name>
-  	</effect>
-  	<effect>
-	  <inherits-from>Effects/lightmap</inherits-from>
-	  <parameters>
-	    <texture n="1">
-	      <image>Aircraft/A350-family/Models/flightdeck/LightMap/cockpit.png</image>
-	    </texture>
-	    <factor>
-	      <use>controls/lighting/panel-norm</use>
-	    </factor>
-	  </parameters>
-  	</effect>
-  	<effect>
-	  <inherits-from>Effects/lightmap</inherits-from>
-	  <parameters>
-	    <texture n="1">
-	      <image>Aircraft/A350-family/Models/flightdeck/LightMap/cockpit_2.png</image>
-	    </texture>
-	    <factor>
-	      <use>controls/lighting/panel-norm</use>
-	    </factor>
-	  </parameters>
-	  <object-name>Plane</object-name>
-  	</effect>
 </PropertyList>

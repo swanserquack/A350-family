@@ -85,43 +85,6 @@
 	</axis>
   </animation> -->
 
-  <effect>
-    <inherits-from>Effects/lightmap</inherits-from>
-    <parameters>
-      <texture n="1">
-        <image>Aircraft/A350-family/Models/LightMap/a350xwb.png</image>
-      </texture>
-      <factor>
-        <use>controls/lighting/landing-lights-norm</use>
-      </factor>
-    </parameters>
-    <object-name>Fuselage</object-name>
-    <object-name>doors</object-name>
-    <object-name>rudder</object-name>
-    <object-name>rudderfront</object-name>
-    <object-name>Nacelle</object-name>
-    <object-name>eng.reverser</object-name>
-    <object-name>eng.reverser</object-name>
-    <object-name>lgdoor.right.front</object-name>
-    <object-name>lgdoor.left.front</object-name>
-    <object-name>Fuselage.003</object-name>
-  </effect>
-  <effect>
-    <inherits-from>Effects/lightmap</inherits-from>
-    <parameters>
-      <texture n="1">
-        <image>Aircraft/A350-family/Models/LightMap/wings.png</image>
-      </texture>
-      <factor>
-        <use>controls/lighting/landing-lights-norm</use>
-      </factor>
-    </parameters>
-    <object-name>Engine.000</object-name>
-    <object-name>Engine.001</object-name>
-    <object-name>wing.right.1</object-name>
-    <object-name>wing.left.1</object-name>
-  </effect>
-
   <animation>
     <type>material</type>
     <object-name>bodyWork</object-name>
