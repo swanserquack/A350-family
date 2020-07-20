@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Air Caraibes</name>
+        <index type="int">1</index>
+        <bodyWork>
+  	  <texture>Liveries/FWI.png</texture>
+        </bodyWork>
+      </livery>
+    </model>
+  </sim>
+</PropertyList>

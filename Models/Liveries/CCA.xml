@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- CCA livery by Marsdolphin -->
+<PropertyList>
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Air China - CCA</name>
+        <index type="int">1</index>
+        <bodyWork>
+  	  <texture>Liveries/CCA.png</texture>
+        </bodyWork>
+      </livery>
+    </model>
+  </sim>
+</PropertyList>
