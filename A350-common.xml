@@ -252,6 +252,8 @@
 				<enabled type="bool">true</enabled>
 			</dynamic>
 		</view>
+		
+		<gui n="0" include="gui/it-gui.xml"/>
 
 		<menubar>
 			<default>
