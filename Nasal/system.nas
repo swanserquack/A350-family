@@ -18,7 +18,3 @@ setlistener("controls/gear/gear-down", func
   props.globals.getNode("controls/gear/gear-down").setBoolValue(1);
   }
  }, 0, 0);
- 
-setlistener("/sim/signals/fdm-initialized", func {	
-	itaf.ITAF.init(0);
-}, 0, 0);
