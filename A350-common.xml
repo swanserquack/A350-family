@@ -278,9 +278,8 @@
 					<item>
 						<label>Autopilot Dialog</label>
 						<binding>
-							<command>nasal</command>
-							<script>var ap_dialog = gui.Dialog.new("sim/gui/dialogs/ap_dialog/dialog", "Aircraft/A350-family/Systems/autopilot-dlg.xml");
-							 ap_dialog.open();</script>
+							<command>dialog-show</command>
+							<dialog-name>autopilot</dialog-name>
 						</binding>
 					</item>
 					<item>
@@ -425,6 +424,7 @@
 		</jsbsim>
 	</fdm>
 
+
 	<it-autoflight>
 		<config>
 			<roll>
@@ -459,13 +459,14 @@
 			<auto-bank-max-deg>30</auto-bank-max-deg> <!-- Maximum Auto Bank Limit -->
 			<autothrottle-max>0.95</autothrottle-max> <!-- Thrust Max Limit Normalized -->
 			<autothrottle-min>0.02</autothrottle-min> <!-- Thrust Low Limit Normalized -->
+			<custom-fma>0</custom-fma> <!-- Call functions when modes change for a custom FMA to be implemented --> 
 			<disable-final>0</disable-final> <!-- Disable the Final Controllers, for custom FCS integration -->
 			<land-enable>1</land-enable> <!-- Enable/Disable Autoland -->
-			<land-flap>0.7</land-flap> <!-- Minimum Flap used for Landing -->
+			<land-flap>0.645</land-flap> <!-- Minimum Flap used for Landing -->
 			<lat-agl-ft>50</lat-agl-ft> <!-- AGL when LNAV becomes active if armed -->
 			<reduc-agl-ft>1500</reduc-agl-ft> <!-- AGL when T/O CLB changes to SPD CLB (FLCH), set to 0 to disable -->
 			<retard-enable>1</retard-enable> <!-- AGL to Thrust Retard -->
-			<retard-ft>50</retard-ft> <!-- Enable Thrust Retard -->
+			<retard-ft>20</retard-ft> <!-- Enable Thrust Retard -->
 			<togaspd>160</togaspd> <!-- V2 + 10kts -->
 		</settings>
 	</it-autoflight>
@@ -539,24 +540,6 @@
 		<keyboard include="A350-keyboard.xml">
 		</keyboard>
 	</input>
-	
-	<!-- Autopilot initialization -->
-	<autopilot>
-
-		<settings>
-			<kts-mach-select type="string">kts</kts-mach-select>
-			<max-pitch type="float">6.0</max-pitch>
-			<min-pitch type="float">-4.0</min-pitch>
-			<bank-angle-limit-deg type="int">35</bank-angle-limit-deg>
-		</settings>
-
-		<internal>
-			<target-pitch-deg type="float">0.00</target-pitch-deg>
-			<max-pitch type="float">6.0</max-pitch>
-			<min-pitch type="float">-4.0</min-pitch>
-		</internal>
-
-	</autopilot>
 
 	<nasal>
 		<A350XWB>
