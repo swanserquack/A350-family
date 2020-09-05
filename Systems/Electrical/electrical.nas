@@ -207,4 +207,4 @@ setlistener("sim/signals/fdm-initialized", func
  {
  electrical.init();
  print("A350XWB Electrical System Initialized");
- });
+ },0, 0);
