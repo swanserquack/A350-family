@@ -3,7 +3,7 @@
 setlistener("/sim/signals/fdm-initialized", func {
 	setprop("/engines/engine[0]/thr", 0);
 	setprop("/engines/engine[1]/thr", 0);
-});
+}, 0, 0);
 
 setlistener("/engines/engine[0]/n2", func {
 	var n2 = getprop("/engines/engine[0]/n2");
@@ -12,7 +12,7 @@ setlistener("/engines/engine[0]/n2", func {
 		thr = 0;
 	}
 	setprop("/engines/engine[0]/thr", thr);
-});
+}, 0, 0);
 
 setlistener("/engines/engine[1]/n2", func {
 	var n2 = getprop("/engines/engine[1]/n2");
@@ -21,15 +21,15 @@ setlistener("/engines/engine[1]/n2", func {
 		thr = 0;
 	}
 	setprop("/engines/engine[1]/thr", thr);
-});
+}, 0, 0);
 
 setlistener("/engines/engine[0]/egt-degf", func {
 	setprop("engines/engine[0]/egt-degc", (getprop("engines/engine[0]/egt-degf") - 32) / 1.8);
-});
+}, 0, 0);
 
 setlistener("/engines/engine[1]/egt-degf", func {
 	setprop("engines/engine[1]/egt-degc", (getprop("engines/engine[1]/egt-degf") - 32) / 1.8);
-});
+}, 0, 0);
 
 setlistener("/fdm/jsbsim/propulsion/engine[0]/reverser-angle-rad", func {
 	var rev = getprop("/fdm/jsbsim/propulsion/engine[0]/reverser-angle-rad");
@@ -38,7 +38,7 @@ setlistener("/fdm/jsbsim/propulsion/engine[0]/reverser-angle-rad", func {
 	} else {
 		setprop("/surface-positions/reverser-norm", 0);		
 	}
-});
+}, 0, 0);
 
 setlistener("/fdm/jsbsim/propulsion/engine[1]/reverser-angle-rad", func {
 	var rev = getprop("/fdm/jsbsim/propulsion/engine[1]/reverser-angle-rad");
@@ -47,4 +47,4 @@ setlistener("/fdm/jsbsim/propulsion/engine[1]/reverser-angle-rad", func {
 	} else {
 		setprop("/surface-positions/reverser-norm", 0);		
 	}
-});
+}, 0, 0);

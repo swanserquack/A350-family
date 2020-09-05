@@ -177,4 +177,4 @@ var toggle_parkingbrakes = func {
 setlistener("sim/signals/fdm-initialized", func {
 	ground_services.init();
 	print("Ground Services ..... Initialized");
-});
+}, 0, 0);

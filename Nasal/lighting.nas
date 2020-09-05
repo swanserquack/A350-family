@@ -8,7 +8,7 @@ setprop("/controls/lighting/beacon",0);
 setprop("/controls/lighting/landing-light",0);
 setprop("/controls/lighting/logo-lights",0);
 setprop("/controls/lighting/nav-lights",0);
-});
+}, 0, 0);
 
 setlistener("controls/lighting/landing-lights[0]", func
  {
@@ -28,4 +28,4 @@ setlistener("controls/lighting/landing-lights[0]", func
  } else {
  setprop("sim/rendering/als-secondary-lights/use-alt-landing-light",0);
  }
- });
+ }, 0, 0);

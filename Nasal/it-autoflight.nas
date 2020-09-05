@@ -199,7 +199,7 @@ var Gain = {
 };
 
 var ITAF = {
-	init: func(t) { # Not everything should be reset if the reset is type 1
+	init: func(t = 0) { # Not everything should be reset if the reset is type 1
 		if (t != 1) {
 			Input.alt.setValue(10000);
 			Input.bankLimitSW.setValue(0);

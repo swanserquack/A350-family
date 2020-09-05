@@ -66,4 +66,4 @@ setlistener("controls/lighting/landing-light",
   func {
     if(getprop("controls/lighting/landing-light")) setprop("controls/lighting/landing-lights-norm",1); else setprop("controls/lighting/landing-lights-norm",0);
   }
-);
+, 0, 0);
