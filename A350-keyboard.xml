@@ -61,37 +61,4 @@
 			</script>
 		</binding>
 	</key>
-	<key n="119">
-		<name>w</name>
-		<desc>Walk forward toward view</desc>
-		<repeatable type="bool">true</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>
-			 walk.walk_about(0.1);
-			</script>
-		</binding>
-	</key>
-	<key n="87">
-		<name>W</name>
-		<desc>Run forward toward view</desc>
-		<repeatable type="bool">true</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>
-			 walk.walk_about(0.25);
-			</script>
-		</binding>
-	</key>
-	<key n="115">
-		<name>s</name>
-		<desc>Walk backward from view</desc>
-		<repeatable type="bool">true</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>
-			 walk.walk_about(-0.1);
-			</script>
-		</binding>
-	</key>
 </PropertyList>
