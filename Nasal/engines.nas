@@ -25,6 +25,19 @@ Engines.autostart = func {
   if ( ! getprop('/engines/engine[1]/running') ) {
     me.startengine[1] = 1;
   }
+     if ( ! getprop('/engines/engine[0]/running') ) {
+    setprop('system/electrical/outputs/efis', 10);
+     setprop('systems/electric/outputs/avionics', 1);
+  }
+}
+
+Engines.shutdown = func {
+  if ( ! getprop('/controls/engines/engine[0]/cutoff',1) ) {
+    setprop('system/electrical/outputs/efis', 0);
+  }
+  if ( ! getprop('/controls/engines/engine[0]/cutoff',1) ) {
+     setprop('system/electrical/outputs/efis', 0);
+  }
 }
 
 Engines.schedule = func {
