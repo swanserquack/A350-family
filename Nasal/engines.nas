@@ -32,12 +32,11 @@ Engines.autostart = func {
 }
 
 Engines.shutdown = func {
+    setprop('/controls/engines/engine[0]/cutoff',1);
+    setprop('/controls/engines/engine[1]/cutoff',1);
+  }
   if ( ! getprop('/controls/engines/engine[0]/cutoff',1) ) {
     setprop('system/electrical/outputs/efis', 0);
-  }
-  if ( ! getprop('/controls/engines/engine[0]/cutoff',1) ) {
-     setprop('system/electrical/outputs/efis', 0);
-  }
 }
 
 Engines.schedule = func {
