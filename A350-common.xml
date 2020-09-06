@@ -267,6 +267,14 @@
 							<script>A350XWB.enginesystem.autostart();</script>
 						</binding>
 					</item>
+					
+					<item>
+           					<label>Shutdown</label>
+            					<binding>
+              						<command>nasal</command>
+              						<script>A350XWB.enginesystem.shutdown();</script>
+            					</binding>
+	  				</item>
 
 					<item>
 						<label>Select livery</label>
@@ -590,10 +598,10 @@
 
 	<engines>
 		<engine n="0">
-			<running type="bool">1</running>
+			<running type="bool">0</running>
 		</engine>
 		<engine n="1">
-			<running type="bool">1</running>
+			<running type="bool">0</running>
 		</engine>
 		<!--	APU engine -->
 		<engine n="2">
