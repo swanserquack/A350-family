@@ -1,7 +1,7 @@
 # INSTALL
 
 ## Install using ZIP Snapshot
-[Download](https://github.com/merspieler/A350-family/archive/dev.zip) the zip file.  
+[Download](https://github.com/merspieler/A350-family/archive/master.zip) the zip file.  
 Use your preferred archive utility to unzip the archive.
 Move the unpacked directory to your aircraft directory. This can be FGData/Aircraft, or a custom directory you've specified.
 
