@@ -54,6 +54,7 @@ var ground_services = {
 
 	me.reset();
 	},
+	
 	update : func {
 	
 		# Chokes and Parking Brakes Control

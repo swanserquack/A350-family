@@ -16,7 +16,7 @@
 	</key>
 	<key n="125">
 		<name>}</name>
-		<desc>Turn	cutoffs on</desc>
+		<desc>Turn cutoffs on</desc>
 		<binding>
 			<command>property-assign</command>
 			<property>/controls/engines/engine[0]/cutoff</property>
@@ -41,6 +41,7 @@
 			<value>1.0</value>
 		</binding>
 	</key>
+
 	<key n="127">
 		<name>Delete</name>
 		<desc>Toggle thrust reversers</desc>
@@ -51,6 +52,7 @@
 			</script>
 		</binding>
 	</key>
+	
 	<key n="66">
 		<name>B</name>
 		<desc>Toggle parking brakes</desc>

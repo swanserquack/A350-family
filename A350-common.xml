@@ -6,7 +6,7 @@
 		<minimum-fg-version>2020.1</minimum-fg-version>
 		<model>
 			<A350XWB>
-				<!--heading-bug-pfd-deg type="double">0</heading-bug-pfd-deg>
+			<!--heading-bug-pfd-deg type="double">0</heading-bug-pfd-deg>
 			<heading-bug-deg type="double">0</heading-bug-deg>
 			<nav1-bug-deg type="double">0</nav1-bug-deg>
 			<nav2-bug-deg type="double">0</nav2-bug-deg>
@@ -269,11 +269,11 @@
 					</item>
 					
 					<item>
-           					<label>Shutdown</label>
-            					<binding>
-              						<command>nasal</command>
-              						<script>A350XWB.enginesystem.shutdown();</script>
-            					</binding>
+           				<label>Shutdown</label>
+            			<binding>
+              				<command>nasal</command>
+              				<script>A350XWB.enginesystem.shutdown();</script>
+            			</binding>
 	  				</item>
 
 					<item>
@@ -283,6 +283,7 @@
 							<script>aircraft.livery.dialog.toggle()</script>
 						</binding>
 					</item>
+
 					<item>
 						<label>Autopilot Dialog</label>
 						<binding>
@@ -290,6 +291,7 @@
 							<dialog-name>autopilot</dialog-name>
 						</binding>
 					</item>
+
 					<item>
 						<name>lights</name>
 						<label>Control Aircraft Lights</label>
@@ -299,6 +301,7 @@
 							 lights.open();</script>
 						</binding>
 					</item>
+
 					<item>
 						<name>announcements</name>
 						<label>Make Announcements</label>
@@ -308,6 +311,7 @@
 							 announce.open();</script>
 						</binding>
 					</item>
+
 					<item>
 						<label>Ground Services Controls</label>
 						<binding>
@@ -316,6 +320,7 @@
 							 ground_services.open();</script>
 						</binding>
 					</item>
+
 					<item>
 						<label>Fuel Truck Controls</label>
 						<binding>
@@ -324,6 +329,7 @@
 							 fuel_truck.open();</script>
 						</binding>
 					</item>
+
 					<item>
 						<label>Pushback</label>
 						<binding>
@@ -480,7 +486,7 @@
 	</it-autoflight>
 	
 	<instrumentation>
-		<!-- mk-viii configuration, see: http://wiki.flightgear.org/index.php/GPWS -->
+		<!-- mk-viii configuration, see: https://wiki.flightgear.org/Ground_proximity_warning_system -->
 		<mk-viii> 
 			<serviceable>true</serviceable>
 			<configuration-module>
@@ -544,9 +550,9 @@
 			</tank>
 		</fuel>
 	</consumables>
+
 	<input>
-		<keyboard include="A350-keyboard.xml">
-		</keyboard>
+		<keyboard include="A350-keyboard.xml"></keyboard>
 	</input>
 
 	<nasal>
@@ -562,15 +568,19 @@
 			<file>Aircraft/A350-family/Nasal/ground_services.nas</file>
 			<file>Aircraft/A350-family/Nasal/lighting.nas</file>
 		</A350XWB>
+
 		<itaf>
 			<file>Aircraft/A350-family/Nasal/it-autoflight.nas</file>
 		</itaf>
+
 		<reversethrust>
 			<file>Aircraft/A350-family/Nasal/reversethrust.nas</file>
 		</reversethrust>
+
 		<!--<electrical>
 			<file>Aircraft/A350-family/Nasal/electrical.nas</file>
 		</electrical> -->
+
 		<electrical>
 			<file>Aircraft/A350-family/Systems/Electrical/empty_vectors.nas</file>
 			<file>Aircraft/A350-family/Systems/Electrical/supplier.nas</file>
@@ -579,21 +589,27 @@
 			<file>Aircraft/A350-family/Systems/Electrical/output.nas</file>
 			<file>Aircraft/A350-family/Systems/Electrical/electrical.nas</file>
 		</electrical>
+
 		<tyresmoke>
 			<file>Aircraft/A350-family/Nasal/tyresmoke.nas</file>
 		</tyresmoke>
+
 		<autopush>
 			<file>Nasal/Autopush/autopush.nas</file>
 		</autopush>
+
 		<autopush_driver>
 			<file>Nasal/Autopush/driver.nas</file>
 		</autopush_driver>
+
 		<dynarr>
 			<file>Nasal/Autopush/dynarr.nas</file>
 		</dynarr>
+
 		<autopush_route>
 			<file>Nasal/Autopush/route.nas</file>
 		</autopush_route>
+		
 	</nasal>
 
 	<engines>

@@ -2,10 +2,10 @@
 <?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
 <fdm_config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="A350XWB-900-jsbsim" version="2.0" release="BETA" xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
   <fileheader>
-    <author> Bicyus (Jon Ortuondo) </author>
-    <email> bicyus@gmail.com </email>
-    <filecreationdate> 2012-03-09 </filecreationdate>
-    <version> 0.01 </version>
+    <author>Bicyus (Jon Ortuondo)</author>
+    <email>bicyus@gmail.com</email>
+    <filecreationdate>2012-03-09</filecreationdate>
+    <version>0.01</version>
     <description>Airbus A350XWB - 900</description>
     <note/>
     <limitation/>

@@ -38,6 +38,7 @@
 			<path>/sim/model/autopush/route/show-wingtip</path>
 		</aircraft-data>
 	</sim>
+	
 	<payload>
 		<weight n="0">
 			<name>Crew</name>
@@ -73,10 +74,10 @@
 
 	<limits>
 		<mass-and-balance>
-			<maximum-ramp-mass-lbs>593000</maximum-ramp-mass-lbs>
-			<maximum-takeoff-mass-lbs>591000</maximum-takeoff-mass-lbs>
-			<maximum-landing-mass-lbs>452000</maximum-landing-mass-lbs>
-			<maximum-zero-fuel-mass-lbs>423000</maximum-zero-fuel-mass-lbs>
+			<maximum-ramp-mass-lbs>592824</maximum-ramp-mass-lbs>
+			<maximum-takeoff-mass-lbs>590839</maximum-takeoff-mass-lbs>
+			<maximum-landing-mass-lbs>451948</maximum-landing-mass-lbs>
+			<maximum-zero-fuel-mass-lbs>423288</maximum-zero-fuel-mass-lbs>
 		</mass-and-balance>
 		<max-flap-extension-speed>
 			<flaps>0.29</flaps>
