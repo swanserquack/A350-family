@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList include="A350-common.xml">
+    <sim>
+        <description>Airbus A350-900</description>
+        <flight-model>jsb</flight-model>
+        <aero>A350-900-jsbsim</aero>
+        <engine>Trent XWB</engine>
+
+        <model>
+            <path>Aircraft/A350-family/Models/A350-900.xml</path> <!--Double check-->
+            <autopush include="autopush-config.xml"></autopush> <!--No documentation on wiki-->
+        </model>
+
+        <!--Need to figure out what the flaps setting was used for? Not really seen in modern aircraft-->
+        <!-- Not sure why offset is needed here -->
+
+        <startup>
+            <splash-texture>Aircraft/A350-family/Splashs/splash.png</splash-texture>
+        </startup>
+        
+        <previews>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashs/splash.png</path>
+            </preview>
+        </previews>
+
+        <aircraft-data>
+			<path>/sim/model/autopush/route/show</path>
+			<path>/sim/model/autopush/route/show-wingtip</path>
+		</aircraft-data>
+    </sim>
+
+    <!--Payload needed due to it not being defined in the common .xml (Potential move there later?)-->
+    <payload>
+        <weight n="0">
+            <name>Crew</name>
+            <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+            <min-lb type="double">120</min-lb> <!--Might make 0 later-->
+            <max-lb type="double">600</max-lb>
+        </weight>
+        <weight n="1">
+            <name>PAX</name>
+            <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
+            <min-lb type="double">0</min-lb>
+            <max-lb type="double">57200</max-lb> <!--Based on 130lb per passenger with 440 max seats (https://aircraft.airbus.com/en/aircraft/a350-clean-sheet-clean-start/a350-900)-->
+        </weight>
+        <weight n="2"></weight>
+    </payload>
+</PropertyList>

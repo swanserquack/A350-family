@@ -124,7 +124,7 @@ YAW MOI_________3950000______23089847_______24848934
       </location>
     </pointmass>
     <pointmass name="Engine1">
-      <weight unit="LBS">13000</weight>
+      <weight unit="LBS">16640</weight> <!-- https://www.easa.europa.eu/en/downloads/7635/en -->
       <form shape="cylinder">
         <radius unit="M"> 1.31 </radius>
         <length unit="M"> 5 </length>
@@ -136,7 +136,7 @@ YAW MOI_________3950000______23089847_______24848934
       </location>
     </pointmass>
     <pointmass name="Engine2">
-      <weight unit="LBS">13000</weight>
+      <weight unit="LBS">16640</weight>
       <form shape="cylinder">
         <radius unit="M"> 1.31 </radius>
         <length unit="M"> 5 </length>

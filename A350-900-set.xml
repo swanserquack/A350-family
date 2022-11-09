@@ -33,6 +33,7 @@
 				<path>Splashs/splash.png</path>
 			</preview>
 		</previews>
+		
 		<aircraft-data>
 			<path>/sim/model/autopush/route/show</path>
 			<path>/sim/model/autopush/route/show-wingtip</path>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList  include="Aircraft/Generic/Human/Include/walker-include.xml">
 	<sim>
-		<author> Juuso Tapaninen (jormapaappa1235), Brendan O'Gara (Sbyx), Chris Leung (ACJZA), Chris Andrews (DARK-L) Joshua Davidson (it0uchpods/411)</author>
+		<author> Juuso Tapaninen (jormapaappa1235), Brendan O'Gara (Sbyx), Chris Leung (ACJZA), Chris Andrews (DARK-L), Joshua Davidson (it0uchpods/411), Antoni Gruse (swanserquack)</author>
 		<status>Alpha</status>
 		<minimum-fg-version>2020.1</minimum-fg-version>
 		<model>
