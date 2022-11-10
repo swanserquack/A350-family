@@ -11,7 +11,15 @@
             <autopush include="autopush-config.xml"></autopush> <!--No documentation on wiki-->
         </model>
 
-        <!--Need to figure out what the flaps setting was used for? Not really seen in modern aircraft-->
+        <!--Need to figure out a better system for flaps as this (in my personal terrible experience) is not used in modern aircraft-->
+        <flaps>
+			<setting>0.00</setting>
+			<setting>0.29</setting>
+			<setting>0.596</setting>
+			<setting>0.645</setting>
+			<setting>1</setting>
+		</flaps>
+
         <!-- Not sure why offset is needed here -->
 
         <startup>
@@ -46,6 +54,49 @@
             <min-lb type="double">0</min-lb>
             <max-lb type="double">57200</max-lb> <!--Based on 130lb per passenger with 440 max seats (https://aircraft.airbus.com/en/aircraft/a350-clean-sheet-clean-start/a350-900)-->
         </weight>
-        <weight n="2"></weight>
+        <weight n="2">
+            <name>Fwd Cargo</name>
+            <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]"/>
+            <min-lb type="double">0</min-lb>
+            <max-lb type="double">70000</max-lb> <!--This might be a bit of an overshot but is based on 20*https://www.deltacargo.com/Cargo/catalog/aircraft-specification/airbus-350-900-->
+        </weight>
+        <weight n="3">
+            <name>Aft Cargo</name>
+            <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[3]"/>
+            <min-lb type="double">0</min-lb>
+            <max-lb type="double">56000</max-lb> <!--Based on 16 LD3 containers-->
+        </weight>
+        <weight n="4">
+            <name>Rear Bulk Cargo</name>
+            <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[4]"/>
+            <min-lb type="double">0</min-lb>
+            <max-lb type="double">3000</max-lb> <!--Running on old figures here-->
+        </weight>
     </payload>
+
+    <limits>
+        <mass-and-balance> <!-- Based off https://aircraft.airbus.com/en/aircraft/a350-clean-sheet-clean-start/a350-900-->
+            <maximum-ramp-mass-lbs>625892</maximum-ramp-mass-lbs>
+            <maximum-takeoff-mass-lbs>623908</maximum-takeoff-mass-lbs>
+            <maximum-landing-mass-lbs>456357</maximum-landing-mass-lbs>
+            <maximum-zero-fuel-mass-lbs>431445</maximum-zero-fuel-mass-lbs>
+        </mass-and-balance>
+        <!--Need to double check these numbers as they seem kinda suspicious-->
+        <max-flap-extension-speed>
+            <flaps>0.29</flaps>
+            <speed>230</speed>
+        </max-flap-extension-speed>
+        <max-flap-extension-speed>
+            <flaps>0.596</flaps>
+            <speed>205</speed>
+        </max-flap-extension-speed>
+        <max-flap-extension-speed>
+            <flaps>0.645</flaps>
+            <speed>195</speed>
+        </max-flap-extension-speed>
+        <max-flap-extension-speed>
+            <flaps>1</flaps>
+            <speed>190</speed>
+        </max-flap-extension-speed>
+    </limits>
 </PropertyList>
